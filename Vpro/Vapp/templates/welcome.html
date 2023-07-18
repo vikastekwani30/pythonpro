@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+          background-image: url('{% static 'images/earth.jpeg' %}');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+    }
+    .f-div{
+    display: flex;
+justify-content: center;
+    }
+    .f-div img {
+  padding: 40px;
+  height: 200px;
+  width: 300px;
+}
+    </style>
+</head>
+<body>
+<!--        <h1>Good Morning</h1>-->
+<!--        <p><a href="/imgdemo/">Image</a></p>-->
+<!--        <p><a href="/ahmedabad/">Ahmedabad</a></p>-->
+<!--        <p><a href="/gandhinagar/">Gandhinagar</a></p>-->
+<!--        <p><a href="/rajkot/">Rajkot</a></p>-->
+<!--        <p><a href="/surat/">Surat</a></p>-->
+<div class="f-div">
+                <a href="/india"><img src="{% static 'images/i.jpeg' %}"></a>
+                <a href="/germany"><img src="{% static 'images/g.jpeg' %}"></a>
+                <a href="/russia"><img src="{% static 'images/r.jpeg' %}"></a>
+      </div>
+<div class="f-div">
+                <a href="/uk"><img src="{% static 'images/u.jpeg' %}"></a>
+                <a href="/usa"><img src="{% static 'images/us.jpeg' %}"></a>
+                <a href="/argentina"><img src="{% static 'images/a.jpeg' %}"></a>
+        </div>
+<div class="f-div">
+                <a href="/brazil"><img src="{% static 'images/b.jpeg' %}"></a>
+    </div>
+
+</body>
+</html>
